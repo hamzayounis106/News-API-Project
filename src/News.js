@@ -1,29 +1,20 @@
 import React, { useState, useEffect } from "react";
 import "./output.css";
-function App() {
+import articlesData from "./NewsApi.json";
+function News() {
   const [articles, setArticles] = useState([]);
   useEffect(() => {
-    async function fatchData() {  
-      try {
-        const response = await fetch(
-          "https://newsapi.org/v2/top-headlines?country=us&apiKey=e2de2009782a4169a0b552c792ab741f"
-        );
-        const articlesData = await response.json();
-        if (articlesData.articles && articlesData.articles.length > 0) {
-          setArticles(articlesData.articles);
-        }
-      } catch (error) {
-        console.error("Error while fetching articles: " + error);
-      }
+    if (articlesData.articles && articlesData.articles.length > 0) {
+      setArticles(articlesData.articles);
+      console.log(articlesData.status)
     }
-    fatchData();
-  }, []);
+  }, [articlesData.articles]);
   return (
     <>
       <div className="flex flex-row flex-wrap justify-center text-black">
-        {articles.map((article) => (
+        {articles.map((article,index) => (
           <div
-            key={article.url}
+            key={index}
             className="flex flex-col  w-96 p-4 m-5 bg-white  items-center rounded-2xl justify-start"
           >
             <img
@@ -52,4 +43,4 @@ function App() {
   );
 }
 
-export default App;
+export default News;
