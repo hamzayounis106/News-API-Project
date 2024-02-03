@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/React-App/static/css/main.6c99d8ff.css",
-    "main.js": "/React-App/static/js/main.73ca4061.js",
-    "index.html": "/React-App/index.html",
-    "main.6c99d8ff.css.map": "/React-App/static/css/main.6c99d8ff.css.map",
-    "main.73ca4061.js.map": "/React-App/static/js/main.73ca4061.js.map"
+    "main.css": "/News-API-Project/static/css/main.6c99d8ff.css",
+    "main.js": "/News-API-Project/static/js/main.73ca4061.js",
+    "index.html": "/News-API-Project/index.html",
+    "main.6c99d8ff.css.map": "/News-API-Project/static/css/main.6c99d8ff.css.map",
+    "main.73ca4061.js.map": "/News-API-Project/static/js/main.73ca4061.js.map"
   },
   "entrypoints": [
     "static/css/main.6c99d8ff.css",
