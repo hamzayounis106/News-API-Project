@@ -11,5 +11,3 @@ The `App.js` component is responsible for fetching news articles from the NewsAP
 ### 2. News.js
 
 The `News.js` component is designed to display news articles. It retrieves data either from the live NewsAPI or the static JSON file, depending on the environment. This ensures seamless functionality both during development and when the app is deployed to GitHub Pages.
-
-## Usage
